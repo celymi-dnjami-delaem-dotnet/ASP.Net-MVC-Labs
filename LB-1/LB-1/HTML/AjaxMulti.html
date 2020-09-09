@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function sendAjax() {
+            var xmlHttpRequest = new XMLHttpRequest();
+            var body = JSON.stringify({
+                x: document.getElementById('x').value,
+                y: document.getElementById('y').value
+            });
+
+            xmlHttpRequest.open('POST', 'https://localhost:44300/multi-ajax');
+            xmlHttpRequest.send(body);
+
+            xmlHttpRequest.onreadystatechange = () => {
+                if (xmlHttpRequest.readyState === XMLHttpRequest.DONE && xmlHttpRequest.status === 200) {
+                    document.getElementById('sumResult').innerHTML = xmlHttpRequest.responseText;
+                };
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <label>ParmA: <input type="number" id="x" /></label>
+    <label>ParmA: <input type="number" id="y" /></label>
+    <button onclick="sendAjax()">Get AJAX-sum</button>
+    <p>Result: <span id="sumResult"></span></p>
+</body>
+</html>
