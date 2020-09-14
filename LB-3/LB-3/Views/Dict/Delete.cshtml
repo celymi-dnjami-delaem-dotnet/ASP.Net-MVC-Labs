@@ -1,0 +1,15 @@
+﻿@model LB_3.Models.PhoneContact
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<p>Are you sure that you want to remove <b>@Model.Name @Model.Phone</b> ?</p>
+
+<form method="post" action="~/Dict/DeleteSave">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="hidden" name="Name" value="@Model.Name" />
+    <input type="hidden" name="Phone" value="@Model.Phone" />
+    <input type="submit" />
+</form>

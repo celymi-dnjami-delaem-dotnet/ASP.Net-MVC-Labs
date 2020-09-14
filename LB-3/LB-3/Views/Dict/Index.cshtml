@@ -1,0 +1,15 @@
+﻿@model IList<LB_3.Models.PhoneContact>
+
+<h2>Index</h2>
+
+<div style="margin: 20px 0">
+    <span>@Html.ActionLink("Add", "Add")</span>
+</div>
+
+<h4>Contacts</h4>
+<ul>
+    @foreach (var contact in @Model)
+    {
+    <li>@contact.Name: @contact.Phone @Html.ActionLink("Update", "Update", contact) @Html.ActionLink("Delete", "Delete", contact)</li>
+    }
+</ul>
