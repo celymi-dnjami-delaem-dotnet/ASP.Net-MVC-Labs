@@ -1,0 +1,12 @@
+﻿@model LB_4.Models.DB.PhoneContactModel
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+<form method="post" action="~/Dict/AddSave">
+    <label>Name: <input type="text" name="Name" /></label>
+    <label>Phone: <input type="text" name="Phone" /></label>
+    <input type="submit" />
+</form>
