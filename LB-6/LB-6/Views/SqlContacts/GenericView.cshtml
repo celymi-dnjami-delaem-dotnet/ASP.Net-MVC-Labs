@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GenericView</title>
+</head>
+<body>
+<h1>@RenderSection("Header")</h1>
+<div>
+    @RenderBody()
+</div>
+<footer>
+    @RenderSection("Footer")
+</footer>
+</body>
+</html>

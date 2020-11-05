@@ -1,0 +1,17 @@
+﻿@model SQL.DAL.Models.PhoneContact
+@using LB_6.Views.Helpers
+@{
+    Layout = "GenericView.cshtml";
+}
+
+@section Header
+{
+    Create contact
+}
+
+@section Footer
+{
+    Footer for creation page
+}
+
+@Html.RenderForm("/SqlContacts/AddSave", "AddSave")

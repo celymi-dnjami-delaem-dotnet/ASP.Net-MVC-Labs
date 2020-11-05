@@ -1,0 +1,17 @@
+﻿@using LB_6.Views.Helpers
+@model JSON.DAL.Models.PhoneContact
+@{
+    Layout = "GenericView.cshtml";
+}
+
+@section Header
+{
+    Update contact
+}
+
+@section Footer
+{
+    Footer for update page
+}
+
+@Html.RenderForm("/JsonContacts/UpdateSave", "UpdateSave", Model)

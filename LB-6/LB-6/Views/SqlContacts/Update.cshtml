@@ -1,0 +1,17 @@
+﻿@model SQL.DAL.Models.PhoneContact
+@using LB_6.Views.Helpers
+@{
+    Layout = "GenericView.cshtml";
+}
+
+@section Header
+{
+    Update contact
+}
+
+@section Footer
+{
+    Footer for update page
+}
+
+@Html.RenderForm("/SqlContacts/UpdateSave", "UpdateSave", Model)

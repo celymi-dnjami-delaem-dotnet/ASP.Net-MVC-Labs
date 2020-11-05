@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SQL.DAL.Models.PhoneContact>
+@{
+    Layout = "GenericView.cshtml";
+}
+
+@section Header
+{
+    SQL-Contacts view
+}
+
+@section Footer {
+    This is footer for main page
+}
+
+<div style="margin: 20px 0">
+    <span>@Html.ActionLink("Add", "Add")</span>
+</div>
+<div>
+    <ul>
+        @foreach (var contact in @Model)
+        {
+            @Html.Partial("ContactInfo", contact);
+        }
+    </ul>
+</div>
