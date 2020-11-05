@@ -1,0 +1,10 @@
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\bin\Debug\LB-7B-WF.exe.config
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\bin\Debug\LB-7B-WF.exe
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\bin\Debug\LB-7B-WF.pdb
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB-7B-WF.csprojAssemblyReference.cache
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB_7B_WF.Form1.resources
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB_7B_WF.Properties.Resources.resources
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB-7B-WF.csproj.GenerateResource.cache
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB-7B-WF.csproj.CoreCompileInputs.cache
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB-7B-WF.exe
+D:\TestProjects\BSTU\LB-7B-WF\LB-7B-WF\obj\Debug\LB-7B-WF.pdb
