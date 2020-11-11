@@ -1,0 +1,25 @@
+@model IList<PhoneContact>
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contacts</title>
+</head>
+<body>
+<h2>Contacts</h2>
+@Html.ActionLink("Add", "AddContactView")
+<div>
+    <ul>
+    @foreach (var contact in @Model)
+    {
+        <li>@contact.Name @contact.Phone @Html.ActionLink("Update", "UpdateContactView", contact) @Html.ActionLink("Delete", "RemoveContactView", contact)</li>
+    }
+    </ul>
+</div>
+</body>
+</html>

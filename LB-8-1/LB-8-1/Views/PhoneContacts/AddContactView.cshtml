@@ -1,0 +1,12 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm("AddContact", "PhoneContacts", FormMethod.Post))
+{
+    <label>Name: <input type="text" name="name"/></label>
+    <label>Phone: <input type="text" name="phone"/></label>
+    <button type="submit">Add</button>
+}

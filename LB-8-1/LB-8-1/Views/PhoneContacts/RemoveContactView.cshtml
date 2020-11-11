@@ -1,0 +1,13 @@
+@model int
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Remove</h2>
+<p>Are you sure you want to remove this contact?</p>
+@using (Html.BeginForm("RemoveContact", "PhoneContacts", FormMethod.Post))
+{
+    <input type="hidden" value="@Model" name="id" />
+    <button type="submit">Remove</button>
+}
